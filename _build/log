@@ -1,0 +1,151 @@
+# C:\OCaml64\home\negru\.opam\4.14.0+mingw64c\bin\dune.exe runtest test/logs
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: "C:\\OCaml64\\home\\projet\\OGIT"
+# Auto-detected concurrency: 12
+$ C:\OCaml64\home\negru\.opam\4.14.0+mingw64c\bin\ocamlc.opt.exe -config > C:\OCaml64\tmp\dune_386d28_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path =
+#      Some External "C:/OCaml64/home/negru/.opam/4.14.0+mingw64c/lib/toplevel"
+#  ; ocaml_bin =
+#      External "C:\\OCaml64\\home\\negru\\.opam\\4.14.0+mingw64c\\bin"
+#  ; ocaml =
+#      Ok
+#        External
+#          "C:\\OCaml64\\home\\negru\\.opam\\4.14.0+mingw64c\\bin\\ocaml.exe"
+#  ; ocamlc =
+#      External
+#        "C:\\OCaml64\\home\\negru\\.opam\\4.14.0+mingw64c\\bin\\ocamlc.opt.exe"
+#  ; ocamlopt =
+#      Ok
+#        External
+#          "C:\\OCaml64\\home\\negru\\.opam\\4.14.0+mingw64c\\bin\\ocamlopt.opt.exe"
+#  ; ocamldep =
+#      Ok
+#        External
+#          "C:\\OCaml64\\home\\negru\\.opam\\4.14.0+mingw64c\\bin\\ocamldep.opt.exe"
+#  ; ocamlmklib =
+#      Ok
+#        External
+#          "C:\\OCaml64\\home\\negru\\.opam\\4.14.0+mingw64c\\bin\\ocamlmklib.opt.exe"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" :
+#            "C:\\\\OCaml64\\\\home\\\\negru\\\\.opam\\\\4.14.0+mingw64c\\lib"
+#        ; "DUNE_OCAML_STDLIB" :
+#            "C:/OCaml64/home/negru/.opam/4.14.0+mingw64c/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" : "C:\\OCaml64\\home\\projet\\OGIT"
+#        ; "INSIDE_DUNE" : "C:\\OCaml64\\home\\projet\\OGIT\\_build/default"
+#        ; "MANPATH" :
+#            "C:\\OCaml64\\home\\projet\\OGIT\\_build/install/default/bin"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "C:\\OCaml64\\home\\projet\\OGIT\\_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "C:\\OCaml64\\home\\projet\\OGIT\\_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "C:\\OCaml64\\home\\projet\\OGIT\\_build/install/default/lib/toplevel"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths =
+#      [ External
+#          "C:\\\\OCaml64\\\\home\\\\negru\\\\.opam\\\\4.14.0+mingw64c\\lib"
+#      ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.14.0"
+#      ; standard_library_default =
+#          "C:/cygwin/home/appveyor/.opam/4.14.0+mingw64c/lib/ocaml"
+#      ; standard_library =
+#          "C:/OCaml64/home/negru/.opam/4.14.0+mingw64c/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "x86_64-w64-mingw32-gcc"
+#      ; ocamlc_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-mms-bitfields" ]
+#      ; ocamlc_cppflags = []
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-mms-bitfields" ]
+#      ; ocamlopt_cppflags = []
+#      ; bytecomp_c_compiler =
+#          [ "x86_64-w64-mingw32-gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-mms-bitfields"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lws2_32"; "-lversion" ]
+#      ; native_c_compiler =
+#          [ "x86_64-w64-mingw32-gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-mms-bitfields"
+#          ]
+#      ; native_c_libraries = [ "-lws2_32"; "-lversion" ]
+#      ; native_pack_linker = [ "x86_64-w64-mingw32-ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "mingw64"
+#      ; asm = [ "x86_64-w64-mingw32-gcc"; "-c" ]
+#      ; asm_cfi_supported = false
+#      ; with_frame_pointers = false
+#      ; ext_exe = ".exe"
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".dll"
+#      ; os_type = "Win32"
+#      ; default_executable_name = "camlprog.exe"
+#      ; systhread_supported = true
+#      ; host = "x86_64-w64-mingw32"
+#      ; target = "x86_64-w64-mingw32"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X031"
+#      ; cmi_magic_number = "Caml1999I031"
+#      ; cmo_magic_number = "Caml1999O031"
+#      ; cma_magic_number = "Caml1999A031"
+#      ; cmx_magic_number = "Caml1999Y031"
+#      ; cmxa_magic_number = "Caml1999Z031"
+#      ; ast_impl_magic_number = "Caml1999M031"
+#      ; ast_intf_magic_number = "Caml1999N031"
+#      ; cmxs_magic_number = "Caml1999D031"
+#      ; cmt_magic_number = "Caml1999T031"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = true
+#      }
+#  }
+$ (cd _build/default && C:\OCaml64\home\negru\.opam\4.14.0+mingw64c\bin\ocamldep.opt.exe -modules -intf ogit/lib/objects.mli) > _build/default/ogit/lib/.ogitlib.objs/objects.mli.d
+$ (cd _build/default && C:\OCaml64\home\negru\.opam\4.14.0+mingw64c\bin\ocamlc.opt.exe -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I ogit/lib/.ogitlib.objs/byte -no-alias-deps -opaque -open Ogitlib -o ogit/lib/.ogitlib.objs/byte/ogitlib__Objects.cmi -c -intf ogit/lib/objects.mli)
+$ (cd _build/default && C:\OCaml64\home\negru\.opam\4.14.0+mingw64c\bin\ocamlc.opt.exe -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I ogit/test/logs/.test_logs.eobjs/byte -I ogit/lib/.ogitlib.objs/byte -no-alias-deps -opaque -o ogit/test/logs/.test_logs.eobjs/byte/dune__exe__Test_logs.cmi -c -intf ogit/test/logs/test_logs.mli)
+$ (cd _build/default && C:\OCaml64\home\negru\.opam\4.14.0+mingw64c\bin\ocamlopt.opt.exe -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I ogit/lib/.ogitlib.objs/byte -I ogit/lib/.ogitlib.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Ogitlib -o ogit/lib/.ogitlib.objs/native/ogitlib__Objects.cmx -c -impl ogit/lib/objects.ml)
+$ (cd _build/default && C:\OCaml64\home\negru\.opam\4.14.0+mingw64c\bin\ocamlopt.opt.exe -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I ogit/test/logs/.test_logs.eobjs/byte -I ogit/test/logs/.test_logs.eobjs/native -I ogit/lib/.ogitlib.objs/byte -I ogit/lib/.ogitlib.objs/native -intf-suffix .ml -no-alias-deps -opaque -o ogit/test/logs/.test_logs.eobjs/native/dune__exe__Test_logs.cmx -c -impl ogit/test/logs/test_logs.ml)
+$ (cd _build/default && C:\OCaml64\home\negru\.opam\4.14.0+mingw64c\bin\ocamlopt.opt.exe -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o ogit/lib/ogitlib.cmxa ogit/lib/.ogitlib.objs/native/ogitlib.cmx ogit/lib/.ogitlib.objs/native/ogitlib__Objects.cmx ogit/lib/.ogitlib.objs/native/ogitlib__Logs.cmx ogit/lib/.ogitlib.objs/native/ogitlib__Commands.cmx)
+$ (cd _build/default && C:\OCaml64\home\negru\.opam\4.14.0+mingw64c\bin\ocamlopt.opt.exe -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o ogit/test/logs/test_logs.exe C:/OCaml64/home/negru/.opam/4.14.0+mingw64c/lib/ocaml\unix.cmxa -I C:/OCaml64/home/negru/.opam/4.14.0+mingw64c/lib/ocaml ogit/lib/ogitlib.cmxa ogit/test/logs/.test_logs.eobjs/native/dune__exe__Test_logs.cmx)
+$ (cd _build/default/ogit/test/logs && ./test_logs.exe) > _build/default/ogit/test/logs/test_logs.output
+$ C:\OCaml64\bin\git.exe --no-pager diff --no-index --color=always -u --ignore-cr-at-eol _build/default/ogit/test/logs/test_logs.expected _build/default/ogit/test/logs/test_logs.output
+> diff --git a/_build/default/ogit/test/logs/test_logs.expected b/_build/default/ogit/test/logs/test_logs.output
+> index c36569d..511c23b 100755
+> --- a/_build/default/ogit/test/logs/test_logs.expected
+> +++ b/_build/default/ogit/test/logs/test_logs.output
+> @@ -1,3 +1 @@
+>  date_fm date_bidon = 16:08:40-07/11/2022
+> -head_bidon = head_bidon2 ? true
+> -commit_bidon = commit_bidon2 ? true
+[1]

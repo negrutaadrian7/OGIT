@@ -1,0 +1,9 @@
+hash de obj1 : 3adbbad1791fbae3ec908894c4963870
+hash de obj4 : eb300a7a2a303e6aee681bd0b0cda60a
+is_known 1e423d8532170b358868e1af76688c4a? true
+is_known 2f423d8532170b358868e1af76688c4a? false
+
+CONTENU DU FICHIER REPRESENTANT L'OBJET obj4: 
+obj1;t;3adbbad1791fbae3ec908894c4963870
+obj2;t;84a21a9828c872e099f97fd9540ce398
+obj3;d;d41d8cd98f00b204e9800998ecf8427e

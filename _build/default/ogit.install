@@ -1,0 +1,13 @@
+lib: [
+  "_build/install/default/lib/ogit/META"
+  "_build/install/default/lib/ogit/dune-package"
+  "_build/install/default/lib/ogit/opam"
+]
+bin: [
+  "_build/install/default/bin/ogit.exe"
+]
+doc: [
+  "_build/install/default/doc/ogit/LICENSE"
+  "_build/install/default/doc/ogit/README"
+  "_build/install/default/doc/ogit/README.md"
+]
