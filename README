@@ -1,0 +1,67 @@
+Premièrement, pour le fichier objects.ml qui contient l'implémentation du module objects.mli j'ai commencé par introduire le type qu'on va utiliser pour ce projet:
+      type t =
+      | Text of string
+      | Directory of (string * bool * Digest.t * t) list 
+
+
+Le constructeur Text nous indique qu'il s'agit d'un fichier texte et le constructeur Directory d'un répertoire. 
+Maintenant, qu'on dispose du type sur lequel va se baser le projet, on peut commencer avec la première fonction hash qui sert a calculer le hash d'un objet. 
+Pour le faire fonctionner, j'ai utilise plusieurs fonctions auxilliers: 
+     
+     val test : bool -> string; cette fonction va retourner un "d" s'il s'agit d'un dossier et "t" sinon 
+     val liste : (string * bool * string * 'a) list -> string list; 
+     val produce_string : (string * bool * string * 'a) list -> string; fabrique les triplets des fichiers et dossiers (namefile, directoryOrFile, hashDuContenu) 
+
+
+
+Pour vérifier si un objet est déjà présent dans le répertoire .ogit/objects/ on utilise la fonction is_known qui prend comme paramètre le hash d'un objet, la vérification se fait avec l'appel a une 
+fonction du module Sys -> Sys.file_exists (répertoire) 
+
+
+val store_object _object : t -> Digest.t 
+ 
+	Pour stocker un objet de type texte dans .ogit/objects/ et renvoyee le hash du objet il nous faut plusieurs fonctions :
+      1) création d'un fichier: 
+            - creation_fichier : t -> int 
+            - Sys.command ("touch .ogit/objects/" ^    Digest.to_hex (hash objet))
+
+      2) Lecture du contenu du fichier; 
+            - lecture_fichier : string -> string qui prend en parametre le nom d'un fichier 
+            
+            - a l'aide des fonctions d’entrée-sorties 
+      
+      3) Ecriture dans un fichier 
+      4) Fonction qui va produire tout les sous points mentionne en dessus 
+         best_work : t -> t (creation du fichier, ecriture du contenu dans le fichier) 
+
+
+
+read_text_object : string -> string 
+	Pour charger le contenu d'un objet versionné on fait appel au fonction auxilliere déjà crée lecture_fichier : string -> string
+
+
+
+
+val store_work_directory : unit -> Digest.t 
+	Un fonction sans parametre qui est censée de stocker le repertoire "repo/" comme une objet versionnée et de renvoyer le hash de cette objet.
+ 	Pour cela, je vais faire une fonction qui va me filtrer le contenu du repertoire, c-a-d de jetter les fichiers ou repertoires qui commencent par un '.'
+	filter_content : string array -> string array.
+		
+		
+
+
+	Dans la fonction store_work_directory je vais creer une fonction qui est recursive et locale "iter" qui prend comme parametre le path du repertoire courrant 
+	recursive pour avoir la possibilite de descendre dans l'hierarchie s'il s'agit d'un repertoire dans "." 
+
+		L'appel au fonction recursive se fait en mettant le contenu du repo/ dans un Directory (type t) qui ensuite fait un appel au fonction fait anteriorement "store_object" 
+	
+
+val read_directory_object : Digest.t -> t 
+	2 fonctions auxillieres, la première va me permettre de lire le fichier et de mettre le contenu dans une liste 
+	ligne par ligne.
+	Dans ma fonction principale qui est read_directory_object je vais creer une fonction local qui va me permet de construire le quadruplet a partir de triplet contenu dans un ligne d'un objet versionné de type Directory 
+	Finalemment, je mets le resultat (liste) dans un Directory. 
+
+	
+
+ 
